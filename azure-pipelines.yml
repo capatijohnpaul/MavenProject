@@ -26,4 +26,4 @@ steps:
   inputs:
     targetPath: '$(System.DefaultWorkingDirectory)/target/demo.jar'
     artifact: 'demo'
-    publishLocation: 'filepath'
+    publishLocation: 'pipeline'
