@@ -22,8 +22,8 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: PublishBuildArtifacts@1
+- task: PublishPipelineArtifact@1
   inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/target/demo.jar'
-    ArtifactName: 'demo'
-    publishLocation: 'FilePath'
+    targetPath: '$(System.DefaultWorkingDirectory)/target/demo.jar'
+    artifact: 'demo'
+    publishLocation: 'filepath'
