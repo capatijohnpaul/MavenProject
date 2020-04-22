@@ -26,9 +26,9 @@ steps:
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
     Contents: |
-      **/target/*.jar
-      **/target/**/*.iss
-      **/target/**/*.bat
+      **\target\*.jar
+      **\target\**\*.iss
+      **\target\**\*.bat
     TargetFolder: '$(build.artifactstagingdirectory)'
 
 - task: PublishBuildArtifacts@1
