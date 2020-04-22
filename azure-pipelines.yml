@@ -22,8 +22,17 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: |
+      **/target/*.jar
+      **/target/*.iss
+      **/target/*.cmd
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/target/demo.jar'
+    PathtoPublish: '$(build.artifactstagingdirectory)'
     ArtifactName: 'demo'
     publishLocation: 'Container'
