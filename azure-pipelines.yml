@@ -27,8 +27,8 @@ steps:
     SourceFolder: '$(system.defaultworkingdirectory)'
     Contents: |
       **/target/*.jar
-      **/target/*.iss
-      **/target/*.cmd
+      **/target/**/*.iss
+      **/target/**/*.cmd
     TargetFolder: '$(build.artifactstagingdirectory)'
 
 - task: PublishBuildArtifacts@1
