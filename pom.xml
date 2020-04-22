@@ -39,6 +39,24 @@
 
 	<build>
 		<finalName>demo</finalName>
+		<resources>
+		<resource>
+			<directory>src/main/resources</directory>
+			<filtering>true</filtering>
+			<includes>
+				<include>iscc.cmd</include>
+				<include>sample.iss</include>
+			</includes>
+		</resource>
+		<resource>
+			<directory>src/main/resources</directory>
+			<filtering>false</filtering>
+			<excludes>
+				<exclude>iscc.cmd</exclude>
+				<exclude>sample.iss</exclude>
+			</excludes>
+		</resource>
+	</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
