@@ -28,7 +28,7 @@ steps:
     Contents: |
       **/target/*.jar
       **/target/**/*.iss
-      **/target/**/*.cmd
+      **/target/**/*.bat
     TargetFolder: '$(build.artifactstagingdirectory)'
 
 - task: PublishBuildArtifacts@1
