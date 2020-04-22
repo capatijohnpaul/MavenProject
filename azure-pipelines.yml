@@ -24,6 +24,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/target/demo.jar'
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/target/demo.jar'
     ArtifactName: 'demo'
     publishLocation: 'Container'
