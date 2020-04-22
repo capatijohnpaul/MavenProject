@@ -26,4 +26,4 @@ steps:
   inputs:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/target/demo.jar'
     ArtifactName: 'demo'
-    publishLocation: 'Container'
+    publishLocation: 'FilePath'
