@@ -25,7 +25,10 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents: '**/target/demo.jar'
+    Contents: |
+      **/target/*.jar
+      **/target/*.iss
+      **/target/*.cmd
     TargetFolder: '$(build.artifactstagingdirectory)'
 
 - task: PublishBuildArtifacts@1
