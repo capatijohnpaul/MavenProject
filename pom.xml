@@ -41,18 +41,18 @@
 		<finalName>demo</finalName>
 		<resources>
 		<resource>
-			<directory>src/main/resources</directory>
+			<directory>install</directory>
 			<filtering>true</filtering>
 			<includes>
-				<include>iscc.cmd</include>
+				<include>iscc.bat</include>
 				<include>sample.iss</include>
 			</includes>
 		</resource>
 		<resource>
-			<directory>src/main/resources</directory>
+			<directory>install</directory>
 			<filtering>false</filtering>
 			<excludes>
-				<exclude>iscc.cmd</exclude>
+				<exclude>iscc.bat</exclude>
 				<exclude>sample.iss</exclude>
 			</excludes>
 		</resource>
