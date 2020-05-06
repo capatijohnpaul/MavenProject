@@ -21,7 +21,7 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-OutputBaseFileName=sample-installer
+; OutputBaseFileName=sample-installer
 Compression=lzma
 SolidCompression=yes
 
